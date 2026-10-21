@@ -1,0 +1,8 @@
+{
+  "name": "Remix SIMBA - Simpulan Bahasa Interaktif MBPK",
+  "description": "Aplikasi web pembelajaran simpulan bahasa dan peribahasa bertemakan Jagalah Kebersihan khas untuk Murid Berkeperluan Pendidikan Khas (MBPK) dengan bantuan audio, visual mesra disleksia, permainan buka peribahasa, dan modul bercerita.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

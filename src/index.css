@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-dyslexic: 'Lexend', sans-serif;
+    --font-opendyslexic: 'OpenDyslexic', 'Lexend', sans-serif;
+    --font-cheerful: 'Fredoka', 'Comic Neue', cursive;
+  }
+
+  body {
+    font-family: var(--font-dyslexic);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Dyslexia Typography Utility Classes */
+.font-opendyslexic {
+  font-family: 'OpenDyslexic', 'Lexend', sans-serif !important;
+}
+
+.font-lexend {
+  font-family: 'Lexend', sans-serif !important;
+}
+
+.font-comic {
+  font-family: 'Comic Neue', 'Fredoka', cursive !important;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.08em !important;
+  word-spacing: 0.16em !important;
+  line-height: 1.85 !important;
+}
+
+.letter-spacing-extra {
+  letter-spacing: 0.16em !important;
+  word-spacing: 0.28em !important;
+  line-height: 2.1 !important;
+}
+
+/* Theme variations */
+body[data-theme="krim"] {
+  background-color: #fef7ee;
+  color: #3b2512;
+}
+
+body[data-theme="biru"] {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+body[data-theme="hijau"] {
+  background-color: #f0fdf4;
+  color: #14532d;
+}
+
+body[data-theme="kontras"] {
+  background-color: #121212;
+  color: #ffeb3b;
+}
+
+body[data-theme="kontras"] .bg-white {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-color: #ffeb3b !important;
+}
+
+body[data-theme="kontras"] .text-slate-800,
+body[data-theme="kontras"] .text-slate-700,
+body[data-theme="kontras"] .text-gray-800 {
+  color: #fef08a !important;
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* Print styles for Teacher Worksheets & Student Certificates */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
